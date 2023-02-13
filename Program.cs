@@ -66,16 +66,16 @@ double[] DoubleArray(int size, int minValue, int maxValue)
     return res;
 }
 
-double Diff(double[] Array)  
+double Diff(double[] array)  
 
 {
-    double min = Array[0];
-    double max = Array[0];
+    double min = array[0];
+    double max = array[0];
 
-    for (int i = 0; i < Array.Length; i++)
+    for (int i = 0; i < array.Length; i++)
     {
-        if (Array[i] < min) min = Array[i];
-        if (Array[i] > max) max = Array[i];
+        if (array[i] < min) min = array[i];
+        if (array[i] > max) max = array[i];
     }
     return max - min;
 }
